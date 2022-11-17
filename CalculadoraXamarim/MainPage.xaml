@@ -32,16 +32,16 @@
                    LineBreakMode="NoWrap" 
                    Grid.ColumnSpan="4" />
             <!-- Fim Resultado -->
-            
-            
+
+
             <!-- Primeira Linha -->
-            <Button Text="7" 
-                    Grid.Row="1" 
+            <Button Text="7" Grid.Row="1" 
                     Grid.Column="0" 
                     BackgroundColor="White" 
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="8" 
                     Grid.Row="1" 
@@ -50,6 +50,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="9" 
                     Grid.Row="1" 
@@ -58,6 +59,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="/" 
                     Grid.Row="1" 
@@ -77,6 +79,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="5" 
                     Grid.Row="2" 
@@ -85,6 +88,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="6" 
                     Grid.Row="2" 
@@ -93,6 +97,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="X" 
                     Grid.Row="2" 
@@ -112,6 +117,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="2" 
                     Grid.Row="3" 
@@ -120,6 +126,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="3" 
                     Grid.Row="3" 
@@ -128,6 +135,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="-" 
                     Grid.Row="3" 
@@ -147,6 +155,7 @@
                     TextColor="Black" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectNumber"
                     />
             <Button Text="+" 
                     Grid.Row="4" 
@@ -159,7 +168,9 @@
             <!-- Fim quarta Linha -->
 
             <!-- Quinta Linha -->
-            <Button Text="C" 
+            <Button 
+                    x:Name="BtnClear"
+                    Text="C" 
                     Grid.Row="5" 
                     Grid.Column="0" 
                     Grid.ColumnSpan="1"
@@ -167,6 +178,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="BtnClear_Clicked"
                     />
             <Button Text="=" 
                     Grid.Row="5" 
