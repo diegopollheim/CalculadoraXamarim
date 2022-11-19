@@ -41,11 +41,11 @@ namespace CalculadoraXamarim
                 this.resultText.Text = number.ToString("N0");
                 if (currentState == 1)
                 {
-                    firstNumber= number;
+                    firstNumber = number;
                 }
                 else
                 {
-                    secondNumber= number;
+                    secondNumber = number;
                 }
             }
 
@@ -58,6 +58,43 @@ namespace CalculadoraXamarim
             this.resultText.Text = "0";
         }
 
+        void OnSelectOperator(object sender, EventArgs args)
+        {
+            currentState = -2;
+            Button btn = (Button)sender;
+            string pressed = btn.Text;
+            mathOperator = pressed;
+        }
+
+        void OnCalculate(object sender, EventArgs args)
+        {
+            if (currentState == 2)
+            {
+                double result = 0;
+
+                switch (mathOperator)
+                {
+                    case "+":
+                        result = firstNumber + secondNumber; 
+                        break;
+
+                    case "-":
+                        result = firstNumber - secondNumber;
+                        break;
+
+                    case "X":
+                        result = firstNumber * secondNumber;
+                        break;
+
+                    case "/":
+                        result = firstNumber / secondNumber;
+                        break;
+
+                }
+
+                this.resultText.Text = result.ToString("N0");
+            }
+        }
 
     }
 }

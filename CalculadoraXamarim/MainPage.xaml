@@ -68,6 +68,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectOperator"
                     />
             <!-- Fim primeira Linha -->
 
@@ -106,6 +107,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectOperator"
                     />
             <!-- Fim segunda Linha -->
 
@@ -144,6 +146,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectOperator"
                     />
             <!-- Fim terceira Linha -->
 
@@ -164,6 +167,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnSelectOperator"
                     />
             <!-- Fim quarta Linha -->
 
@@ -188,6 +192,7 @@
                     TextColor="White" 
                     FontSize="36"  
                     CornerRadius="0"
+                    Clicked="OnCalculate"
                     />
             <!-- Fim quinta Linha -->
 
